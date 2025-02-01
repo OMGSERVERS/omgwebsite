@@ -1,2 +1,2 @@
-# omgwebsite
+# OMGWEBSITE
 OMGSERVERS website
