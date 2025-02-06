@@ -9,23 +9,171 @@
     <link rel="shortcut icon" href="https://omgservers.com/favicon.ico" type="image/x-icon">
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: 'Roboto', sans-serif;
-            text-align: center;
-            flex-direction: column;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0;
+          min-height: 100vh;
+          font-family: 'Roboto', sans-serif;
+          text-align: center;
+        }
+
+        .header {
+          margin: 20px;
+        }
+
+        .table-container {
+          width: 80%;
+          margin: 20px auto;
+          border: 2px solid #000;
+          border-radius: 10px;
+          overflow: hidden;
+        }
+
+        table {
+          width: 100%;
+          border-collapse: collapse;
+        }
+
+        th,
+        td {
+          border: 1px solid #000;
+          padding: 10px;
+          text-align: center;
+        }
+
+        th {
+          background-color: #f0f0f0;
+        }
+
+        .section-header {
+          background-color: #000;
+          color: #fff;
+          font-weight: bold;
+        }
+
+        .subsection-header {
+          background-color: #e0e0e0;
+          font-weight: bold;
+        }
+
+        a {
+          color: #000;
+          text-decoration: none;
+          font-weight: bold;
+        }
+
+        a:hover {
+          text-decoration: underline;
+        }
+
+        .contact,
+        .legal {
+          width: 80%;
+          margin: 20px auto;
         }
     </style>
 </head>
 <body>
-<div>
+<div class="header">
     <h1>OMGSERVERS</h1>
     <p>Backend solutions for authoritative game servers.</p>
     <p>Find us on <a href="https://github.com/OMGSERVERS/omgservers" target="_blank">GitHub</a>.</p>
-    </br>
+</div>
+
+<!-- Pricing Table -->
+<div class="table-container">
+    <table>
+        <!-- Demoserver Section -->
+        <tr class="section-header">
+            <td colspan="6">Demoserver</td>
+        </tr>
+        <tr>
+            <td colspan="6">Free of charge</td>
+        </tr>
+
+        <!-- Standalone Section -->
+        <tr class="section-header">
+            <td colspan="6">Standalone</td>
+        </tr>
+
+        <!-- Basic (Shared CPU) Subsection -->
+        <tr class="subsection-header">
+            <td colspan="6">Basic (Shared CPU)</td>
+        </tr>
+        <tr>
+            <th>Configuration Name</th>
+            <th>RAM</th>
+            <th>CPU</th>
+            <th>SSD</th>
+            <th>Transfer</th>
+            <th>Total (per month)</th>
+        </tr>
+        <tr>
+            <td>Basic Lite</td>
+            <td>4GB</td>
+            <td>2</td>
+            <td>80GB</td>
+            <td>4TB</td>
+            <td>$62.40</td>
+        </tr>
+        <tr>
+            <td>Basic Standard</td>
+            <td>8GB</td>
+            <td>4</td>
+            <td>160GB</td>
+            <td>5TB</td>
+            <td>$124.80</td>
+        </tr>
+
+        <!-- CPU Optimized (Dedicated CPU) Subsection -->
+        <tr class="subsection-header">
+            <td colspan="6">CPU Optimized (Dedicated CPU)</td>
+        </tr>
+        <tr>
+            <th>Configuration Name</th>
+            <th>RAM</th>
+            <th>CPU</th>
+            <th>SSD</th>
+            <th>Transfer</th>
+            <th>Total (per month)</th>
+        </tr>
+        <tr>
+            <td>Optimized Lite</td>
+            <td>8GB</td>
+            <td>4</td>
+            <td>100GB</td>
+            <td>5TB</td>
+            <td>$244.40</td>
+        </tr>
+        <tr>
+            <td>Optimized Standard</td>
+            <td>16GB</td>
+            <td>8</td>
+            <td>200GB</td>
+            <td>6TB</td>
+            <td>$488.80</td>
+        </tr>
+        <tr>
+            <td>Optimized Pro</td>
+            <td>32GB</td>
+            <td>16</td>
+            <td>400GB</td>
+            <td>7TB</td>
+            <td>$977,60</td>
+        </tr>
+    </table>
+</div>
+
+<div class="contact">
+    <p>
+        If you are interested in other installation configurations, please contact us at
+        <a href="mailto:support@omgservers.com">support@omgservers.com</a>
+    </p>
+</div>
+
+<!-- Legal Documents Links at Bottom -->
+<div class="legal">
     <p>
         <a href="legal/terms_of_service_v1.0.html" target="_blank">Terms of Service</a> |
         <a href="legal/refund_policy_v1.0.html" target="_blank">Refund Policy</a> |
