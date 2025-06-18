@@ -1,0 +1,50 @@
+site_name: OMGSERVERS
+site_url: https://omgservers.com/
+site_description: Backend for authoritative game servers
+
+repo_name: OMGSERVERS/omgservers
+repo_url: https://github.com/OMGSERVERS/omgservers
+
+copyright: Copyright &copy; 2023 - 2025 OMGSERVERS
+
+extra_css:
+  - stylesheets/extra.css
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  palette:
+    - scheme: default
+      primary: white
+  logo: assets/icon1024.png
+  favicon: assets/favicon.png
+  features:
+    - navigation.tabs
+    - navigation.footer
+
+plugins:
+  - blog:
+  - search:
+
+nav:
+  - Home: index.md
+  - Features:
+    - Account Roles: features/account-roles.md
+    - Multi Tenants: features/multi-tenants.md
+    - Integrated Registry: features/integrated-registry.md
+    - Project Deployments: features/project-deployments.md
+    - Containers Scheduler: features/containers-scheduler.md
+    - Lifecycle management: features/lifecycle-management.md
+    - Backend APIs: features/backend-apis.md
+    - Websockets Dispatcher: features/websockets-dispatcher.md
+    - Game SDKs: features/game-sdks.md
+    - CLI commands: features/cli-commands.md
+    - Web console: features/web-console.md
+    - Data Sharding: features/data-sharding.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/OMGSERVERS/omgservers
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/r/omgservers
