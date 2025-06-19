@@ -29,7 +29,7 @@ plugins:
 nav:
   - Home: index.md
   - Features:
-    - Account Roles: features/account-roles.md
+    - User Roles: features/user-roles.md
     - Multi Tenants: features/multi-tenants.md
     - Integrated Registry: features/integrated-registry.md
     - Project Deployments: features/project-deployments.md
